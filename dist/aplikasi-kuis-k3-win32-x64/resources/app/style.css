@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('data/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#app {
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: linear-gradient(90deg, #1e90ff, #00bfff);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#score-box {
+  background: linear-gradient(90deg, #002244, #1e90ff);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#score {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+#results {
+  text-align: left;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Tambahkan jarak antar elemen */
+#question-container {
+  margin-bottom: 20px;
+}
+
+#question-container h3 {
+  margin-bottom: 15px;
+}
+
+#question-container div {
+  margin-bottom: 10px;
+}
+
+/* Desain menarik untuk opsi jawaban */
+#question-container div {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#question-container div:hover {
+  background: rgba(0, 191, 255, 0.3);
+  border: 2px solid #00bfff;
+  transform: scale(1.05);
+}
+
+#question-container input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #00bfff;
+}
+
+/* Tombol soal berikutnya */
+#next-button {
+  margin-top: 20px;
+}
+
+/* Tampilan tombol */
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background: linear-gradient(90deg, #1e90ff, #00bfff);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #00bfff, #1e90ff);
+}
